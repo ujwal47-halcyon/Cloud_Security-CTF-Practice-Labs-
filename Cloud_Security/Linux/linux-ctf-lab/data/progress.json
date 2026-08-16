@@ -1,0 +1,76 @@
+{
+  "solved": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "history": [
+    {
+      "level": 1,
+      "title": "Read the notes",
+      "flag": "CTF{cat_is_your_friend}",
+      "submitted_at": "2026-08-14 23:48:39"
+    },
+    {
+      "level": 2,
+      "title": "Hidden files",
+      "flag": "CTF{hidden_things_hide}",
+      "submitted_at": "2026-08-14 23:54:58"
+    },
+    {
+      "level": 3,
+      "title": "Buried in the tree",
+      "flag": "CTF{find_me_everywhere}",
+      "submitted_at": "2026-08-14 23:56:20"
+    },
+    {
+      "level": 4,
+      "title": "Needle in a log",
+      "flag": "CTF{grep_is_magic}",
+      "submitted_at": "2026-08-15 00:00:13"
+    },
+    {
+      "level": 5,
+      "title": "Permissions",
+      "flag": "CTF{permissions_matter}",
+      "submitted_at": "2026-08-15 00:01:36"
+    },
+    {
+      "level": 6,
+      "title": "Archives",
+      "flag": "CTF{tar_time_archives}",
+      "submitted_at": "2026-08-15 00:03:55"
+    },
+    {
+      "level": 7,
+      "title": "Encoded, not encrypted",
+      "flag": "CTF{encoding_is_not_encryption}",
+      "submitted_at": "2026-08-15 00:10:02"
+    },
+    {
+      "level": 8,
+      "title": "Binary junk",
+      "flag": "CTF{strings_reveal_all}",
+      "submitted_at": "2026-08-15 00:13:26"
+    },
+    {
+      "level": 9,
+      "title": "The shortcut",
+      "flag": "CTF{symlinks_point_the_way}",
+      "submitted_at": "2026-08-15 00:14:46"
+    },
+    {
+      "level": 10,
+      "title": "Wildcards + environment",
+      "flag": "CTF{you_conquered_linux}",
+      "submitted_at": "2026-08-15 00:16:13"
+    }
+  ]
+}

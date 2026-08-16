@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Challenges — Linux Fundamentals CTF{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-tag">10 Levels</div>
+    <h1>Challenge board</h1>
+    <p class="lead">Progress: {{ solved_count }} / {{ total }} flags submitted.</p>
+</section>
+
+<div class="progress-wrap">
+    <div class="progress-bar">
+        <div class="progress-fill" style="width: {{ (solved_count / total * 100) if total else 0 }}%;"></div>
+    </div>
+</div>
+
+<div class="level-list">
+    {% for item in challenges %}
+    <div class="level-row {% if item.id in solved_ids %}solved{% endif %}">
+        <div>
+            <strong>Level {{ item.id }} — {{ item.title }}</strong>
+            <p class="muted">Skill: {{ item.skill }}</p>
+            <p class="muted">Hint: {{ item.hint }}</p>
+        </div>
+        {% if item.id in solved_ids %}
+            <span class="badge ok">Solved</span>
+        {% else %}
+            <span class="badge wait">Unsolved</span>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

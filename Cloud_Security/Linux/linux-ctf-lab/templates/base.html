@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Linux Fundamentals CTF{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="brand" href="/">
+            <div class="brand-icon">L</div>
+            <span>Linux Fundamentals CTF</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/challenges">Challenges</a></li>
+            <li><a class="btn-nav" href="/flags">Submit Flags</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        Local practice lab only. Solve in WSL Kali, submit flags at localhost:5000.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Linux Fundamentals CTF{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-tag">Day 1 Cloud Security Lab</div>
+    <h1>Solve in the terminal.<br>Submit on localhost.</h1>
+    <p>
+        This is the same workflow as your other CTF web apps.
+        Find flags in WSL Kali, then paste them here at
+        <strong>http://localhost:5000/flags</strong>.
+    </p>
+</section>
+
+<div class="grid-2">
+    <div class="card">
+        <h3>1. Build the lab in Kali</h3>
+        <p class="muted">Open WSL Kali and run this first:</p>
+        <pre class="cmd">cd "/mnt/c/Users/Ujwal/Downloads/cloud Security/linux/linux-ctf-lab"
+bash setup_lab.sh
+cd ~/linux-ctf/level1
+ls</pre>
+    </div>
+    <div class="card">
+        <h3>2. Submit flags here</h3>
+        <p class="muted">
+            Every level hides a flag like <code>CTF{...}</code>.
+            Copy it, open the Flags page, and submit.
+        </p>
+        <p class="muted" style="margin-top:1rem;">Today's target: Levels 1-5. Stretch: 6-10.</p>
+        <div style="margin-top:1.25rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+            <a class="btn-primary" href="/flags">Open Flag Submission</a>
+            <a class="btn-ghost" href="/challenges">View Challenges</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Submit Flags — Linux Fundamentals CTF{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-tag">Flag Tracker</div>
+    <h1>Submit a flag</h1>
+    <p class="lead">Progress: {{ solved_count }} / {{ total }} flags found.</p>
+</section>
+
+{% if message %}
+    <div class="alert {{ status or 'info' }}">{{ message }}</div>
+{% endif %}
+
+<div class="grid-2">
+    <div class="form-card">
+        <h3>Paste flag</h3>
+        <form method="post" action="/flags">
+            <div class="form-group">
+                <label for="flag">Flag value</label>
+                <input type="text" id="flag" name="flag" placeholder="CTF{...}" autocomplete="off" required>
+            </div>
+            <button class="btn-primary" type="submit" style="width:100%;">Verify Flag</button>
+        </form>
+        <p class="muted" style="margin-top:1rem;">
+            Format: <code>CTF{something_here}</code>
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Checklist</h3>
+        <div class="level-list" style="margin-top:1rem;">
+            {% for item in challenges %}
+            <div class="level-row {% if item.id in solved_ids %}solved{% endif %}">
+                <div>
+                    <strong>Level {{ item.id }}</strong>
+                    <p class="muted">{{ item.title }}</p>
+                </div>
+                {% if item.id in solved_ids %}
+                    <span class="badge ok">Solved</span>
+                {% else %}
+                    <span class="badge wait">Open</span>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <form method="post" action="/reset" style="margin-top:1rem;">
+            <button class="btn-ghost" type="submit">Reset progress</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
