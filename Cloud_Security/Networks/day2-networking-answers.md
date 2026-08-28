@@ -6,7 +6,7 @@ Day marked complete: No
 
 ---
 
-## [01] Interface Recon (RECON)
+## [01] Interface Recon (RECON).
 
 **Objective:** Identify your machine's network interface and local IP address.
 
@@ -38,7 +38,7 @@ nslookup google.com
 
 Non-authoritative answer:
 Name:   google.com
-Address: 142.250.134.139
+Address: 142.250.134.139.
 Name:   google.com
 Address: 142.250.134.101
 Name:   google.com
