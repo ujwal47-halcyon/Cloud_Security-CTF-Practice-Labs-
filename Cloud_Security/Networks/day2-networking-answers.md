@@ -42,7 +42,7 @@ Address: 142.250.134.139.
 Name:   google.com
 Address: 142.250.134.101
 Name:   google.com
-Address: 142.250.134.102
+Address: 142.250.134.102.
 Name:   google.com
 Address: 142.250.134.138
 Name:   google.com
@@ -58,7 +58,7 @@ Address: 2404:6800:4000:1006::64
 Name:   google.com
 Address: 2404:6800:4000:1006::65
 Name:   google.com
-Address: 2404:6800:4000:1006::8a
+Address: 2404:6800:4000:1006::8a.
 
 ---
 
@@ -98,7 +98,7 @@ sudo apt install traceroute   # if missing
 **My answer:**
 
 2 hops:  1  LAPTOP-C88IQ160.mshome.net (172.20.144.1)  1.900 ms  1.332 ms  1.189 ms
- 2  10.170.65.180 (10.170.65.180)  6.911 ms  6.723 ms  6.618 ms
+ 2  10.170.65.180 (10.170.65.180)  6.911 ms  6.723 ms  6.618 ms.
 
 ---
 
