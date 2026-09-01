@@ -1,4 +1,4 @@
-- Create AWS free tier account
-- Enable MFA on root user
-- Create admin IAM user with least‑privilege policy
-- Test login with/without MFA
+- Create AWS free tier account.
+- Enable MFA on root user.
+- Create admin IAM user with least‑privilege policy.
+- Test login with/without MFA.
