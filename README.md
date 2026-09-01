@@ -3,3 +3,5 @@
 Day 1: Completed Linux basic commands and file handling commands.
 
 Day 2: Completed Networking fundamentals (Part 1).
+
+Day 3: Made AWS Account & Completed IAM Foundations.
