@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mock AWS Console</title></head>
+<body>
+    <h1>Mock AWS Console</h1>
+    <p>Simulate AWS CLI commands:</p>
+    <input type="text" id="cmd" placeholder="s3 list-buckets">
+    <input type="text" id="auth" placeholder="Enter Access Key (Bearer)">
+    <button onclick="runCmd()">Run</button>
+    <pre id="output"></pre>
+
+    <script>
+        function runCmd() {
+            const cmd = document.getElementById('cmd').value;
+            const auth = document.getElementById('auth').value;
+            let url = '';
+            let method = 'GET';
+            let body = null;
+
+            if (cmd.includes('s3 list-buckets')) url = '/aws/s3/list-buckets';
+            else if (cmd.includes('secrets get')) {
+                url = '/aws/secretsmanager/get-secret';
+                method = 'POST';
+                body = JSON.stringify({secret_id: 'DB_PASSWORD'});
+            }
+
+            fetch(url, {
+                method: method,
+                headers: { 'Authorization': 'Bearer ' + auth, 'Content-Type': 'application/json' },
+                body: body
+            }).then(r => r.json()).then(data => {
+                document.getElementById('output').innerText = JSON.stringify(data, null, 2);
+            });
+        }
+    </script>
+</body>
+</html>
