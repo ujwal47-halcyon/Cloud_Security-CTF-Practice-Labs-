@@ -1,0 +1,4 @@
+{"Version":"2012-10-17","Statement
+  ":[{"Effect":"Allow","Principal":"*","Action":["s3:GetObject","s3:ListBuck
+  et"],"Resource":["arn:aws:s3:::s3-misconfig-lab-1788608154-private","arn:a
+  ws:s3:::s3-misconfig-lab-1788608154-private/*"]}]}
