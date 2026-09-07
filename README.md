@@ -13,3 +13,5 @@ Day 14: Understood IAM Foundations.
 Day 15: Understood and Practiced S3 Misconfiguration. 
 
 Day 16: Practiced aws skill builder IAM.
+
+Day 17: practiced aws skill builder s3 bucket.
