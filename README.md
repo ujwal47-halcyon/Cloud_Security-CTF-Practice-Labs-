@@ -14,6 +14,6 @@ Day 15: Understood and Practiced S3 Misconfiguration.
 
 Day 16: Practiced aws skill builder IAM.
 
-Day 17: practiced aws skill builder s3 bucket.
+Day 17: Practiced aws skill builder s3 bucket.
 
-Introduction to AWS Security Hub CSPM
+Day 18: Practiced Introduction to AWS Security Hub CSPM
