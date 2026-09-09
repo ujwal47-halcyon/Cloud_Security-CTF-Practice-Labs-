@@ -17,3 +17,5 @@ Day 16: Practiced aws skill builder IAM.
 Day 17: Practiced aws skill builder s3 bucket.
 
 Day 18: Practiced Introduction to AWS Security Hub CSPM
+
+Day 19: Completed and Understood flaws.cloud level 1.
