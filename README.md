@@ -19,3 +19,5 @@ Day 17: Practiced aws skill builder s3 bucket.
 Day 18: Practiced Introduction to AWS Security Hub CSPM
 
 Day 19: Completed and Understood flaws.cloud level 1 and Learnt how to define a Threat Model in AWS.
+
+Day 20: Secured the Root user in personal account(aws) and created a admin account with administrator Access Policy and Enabled MFA.
