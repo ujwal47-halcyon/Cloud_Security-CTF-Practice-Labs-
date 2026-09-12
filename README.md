@@ -23,3 +23,5 @@ Day 19: Completed and Understood flaws.cloud level 1 and Learnt how to define a 
 Day 20: Secured the Root user in personal account(aws) and created a admin account with administrator Access Policy and Enabled MFA.
 
 Day 21: Completed and Understood flaws.cloud level 2.
+
+Day 22: Completed and understood flaws.cloud level 3.
